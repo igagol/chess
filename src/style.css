@@ -1,0 +1,107 @@
+body {
+    background: black;
+    width: 100%;
+}
+
+.stage_wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.stage{
+    position: relative;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+}
+
+.board{
+
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0;
+}
+
+.field {
+    display: inline-block;
+    position: relative;
+    width: 12.5%;
+}
+
+.field-inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.field::before {
+    content: ' ';
+    display: block;
+    height: 0;
+    padding-top: 100%;
+}
+
+.field.white {
+    background: rgb(212, 189, 189);
+}
+
+.field.black {
+    background: rgb(134, 107, 107);
+}
+
+.figure {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.figure.pawn.white{
+    background-image: url(./assets/pawn_w.png);
+}
+.figure.pawn.black{
+    background-image: url(./assets/pawn.png);
+}
+
+.figure.rook.white{
+    background-image: url(./assets/rook_w.png);
+}
+.figure.rook.black{
+    background-image: url(./assets/rook.png);
+}
+
+.figure.knight.white{
+    background-image: url(./assets/knight_w.png);
+}
+.figure.knight.black{
+    background-image: url(./assets/knight.png);
+}
+
+.figure.bishop.white{
+    background-image: url(./assets/bishop_w.png);
+}
+.figure.bishop.black{
+    background-image: url(./assets/bishop.png);
+}
+
+.figure.queen.white{
+    background-image: url(./assets/queen_w.png);
+}
+.figure.queen.black{
+    background-image: url(./assets/queen.png);
+}
+
+.figure.king.white{
+    background-image: url(./assets/king_w.png);
+}
+.figure.king.black{
+    background-image: url(./assets/king.png);
+}
