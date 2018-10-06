@@ -20,6 +20,8 @@ function move(newField){
     var figure = findField(fromCol, fromRow).querySelector(".figure");
 
     to.appendChild(figure);
+    toggleTurn();
+    checkWinner();
 };
 
 function setOnFigureClickEvents(){
@@ -37,6 +39,8 @@ function clearPossibleMoves(){
 }
 
 function showPossibleMoves(event){
+    if(event.target.dataset.figure != window.turn) return;
+
     event.stopPropagation();
     clearPossibleMoves();
 
@@ -54,9 +58,9 @@ function rtol(number){
     return String.fromCharCode( number + 65 );
 }
 function isFieldOccupied(col, row){
+    if(row > 8 || row < 1 || ltor(col) < 0 || ltor(col) >= 8) return true;
     var field = findField(col, row);
 
-    if(row > 8 || row < 1 || ltor(col) < 0 || ltor(col) >= 8) return true;
 
     return !!field.children[0].children.length > 0;
 }
@@ -83,5 +87,6 @@ function showMoves(figureEl, col, row){
         field.classList.add("possible_move");
         field.dataset.fromCol = col;
         field.dataset.fromRow = row;
-    } 
+    }
+
 }

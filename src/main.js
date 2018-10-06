@@ -6,4 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     setWolfAndSheeps();
     setUpGlobalEvents();
     setOnFigureClickEvents();
+    setupResetEvent();
+    setTurn("sheep");
 });
