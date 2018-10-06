@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     drawChessBoard();
     setWolfAndSheeps();
-    
+    setUpGlobalEvents();
     setOnFigureClickEvents();
 });
