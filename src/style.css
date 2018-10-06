@@ -16,8 +16,16 @@ body {
     top: 10px;
 }
 
-.board{
+#panel {
+    background: rgb(223, 179, 179);
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
 
+.reset_button {
+    display: block;
+    margin: auto;
 }
 
 .row {
@@ -61,17 +69,21 @@ body {
 .field.possible_move{
     background: rgb(78, 206, 78);
     border: rgb(3, 131, 3) solid 1px;
+    box-sizing: border-box;
 }
 
 .field.beating{
     background: rgb(255, 118, 118);
     border: red solid 1px;
+    box-sizing: border-box;
 }
 
 .figure {
     width: 100%;
     height: 100%;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .figure.pawn.white{
@@ -117,8 +129,8 @@ body {
 }
 
 .figure.sheep{
-    background-image: url(./assets/pawn_w.png);
+    background-image: url(./assets/sheep.png);
 }
 .figure.wolf{
-    background-image: url(./assets/pawn.png);
+    background-image: url(./assets/wolf.png);
 }
