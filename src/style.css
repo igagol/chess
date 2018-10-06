@@ -58,6 +58,16 @@ body {
     background: rgb(134, 107, 107);
 }
 
+.field.possible_move{
+    background: rgb(78, 206, 78);
+    border: rgb(3, 131, 3) solid 1px;
+}
+
+.field.beating{
+    background: rgb(255, 118, 118);
+    border: red solid 1px;
+}
+
 .figure {
     width: 100%;
     height: 100%;
@@ -104,4 +114,11 @@ body {
 }
 .figure.king.black{
     background-image: url(./assets/king.png);
+}
+
+.figure.sheep{
+    background-image: url(./assets/pawn_w.png);
+}
+.figure.wolf{
+    background-image: url(./assets/pawn.png);
 }

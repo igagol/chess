@@ -1,19 +1,12 @@
 
+function setWolfAndSheeps(){
+    placeFigure("sheep", "white", "B", 1);
+    placeFigure("sheep", "white", "D", 1);
+    placeFigure("sheep", "white", "F", 1);
+    placeFigure("sheep", "white", "H", 1);
 
-function setFigures(color){
-    let figRow = color == "white" ? 1 : 8;
-    let pawnRow = color == "white" ? 2 : 7;
-    placeFigure("rook", color, "A", figRow);
-    placeFigure("rook", color, "H", figRow);
-    placeFigure("knight", color, "B", figRow);
-    placeFigure("knight", color, "G", figRow);
-    placeFigure("bishop", color, "C", figRow);
-    placeFigure("bishop", color, "F", figRow);
-    placeFigure("king", color, "D", figRow);
-    placeFigure("queen", color, "E", figRow);
-    for(let i = 0; i < 8; i++){
-        placeFigure("pawn", color, String.fromCharCode(65+i), pawnRow);
-    }
+    placeFigure("wolf", "black", "E", 8);
+
 }
 
 function drawChessBoard(){
