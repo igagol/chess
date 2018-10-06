@@ -67,6 +67,7 @@ function createFigure(figureName, color){
     var figure = document.createElement("div");
     figure.dataset.figure = figureName;
     figure.dataset.color = color;
+    figure.dataset.moveCount = 0;
     figure.classList.add("figure", figureName, color);
     return figure;
 }
