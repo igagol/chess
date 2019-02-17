@@ -85,49 +85,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-.figure.pawn.white{
-    background-image: url(./assets/pawn_w.png);
-}
-.figure.pawn.black{
-    background-image: url(./assets/pawn.png);
-}
-
-.figure.rook.white{
-    background-image: url(./assets/rook_w.png);
-}
-.figure.rook.black{
-    background-image: url(./assets/rook.png);
-}
-
-.figure.knight.white{
-    background-image: url(./assets/knight_w.png);
-}
-.figure.knight.black{
-    background-image: url(./assets/knight.png);
-}
-
-.figure.bishop.white{
-    background-image: url(./assets/bishop_w.png);
-}
-.figure.bishop.black{
-    background-image: url(./assets/bishop.png);
-}
-
-.figure.queen.white{
-    background-image: url(./assets/queen_w.png);
-}
-.figure.queen.black{
-    background-image: url(./assets/queen.png);
-}
-
-.figure.king.white{
-    background-image: url(./assets/king_w.png);
-}
-.figure.king.black{
-    background-image: url(./assets/king.png);
-}
-
 .figure.sheep{
     background-image: url(./assets/sheep.png);
 }
