@@ -11,6 +11,7 @@ function setWolfAndSheeps(){
 
 function drawChessBoard(){
     var board = document.getElementById("board");
+    board.innerHTML = "";
     for(var i = 8; i > 0; i--){
         let startFromWhite = !!(i%2);
         var row = createRowOfFields(startFromWhite, i);
